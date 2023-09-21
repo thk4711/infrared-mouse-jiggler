@@ -69,7 +69,7 @@ To get a list of things the Adafruit-TrinketHidCombo library can do have a look 
 
 1. Comment out the following line in the sketch:
 
-   `TrinketHidCombo.println(Data_back, HEX);`
+   ```TrinketHidCombo.println(Data_back, HEX);```
 
 2. Flash the sketch onto the Digispark.
 
@@ -79,7 +79,7 @@ To get a list of things the Adafruit-TrinketHidCombo library can do have a look 
 
 5. Edit the following section in the sketch:
 
-   `// IR codes for your Remote control (this example is for an Apple remote)
+   ```// IR codes for your Remote control (this example is for an Apple remote)
    // change this section to match your remote
    #define VOL_UP    0xE0
    #define VOL_DOWN  0x10
@@ -87,13 +87,13 @@ To get a list of things the Adafruit-TrinketHidCombo library can do have a look 
    #define PREV      0xB0
    #define MUTE      0xBA
    #define MENU      0x40
-   #define PLAYPAUSE 0x7A`
+   #define PLAYPAUSE 0x7A```
 
    The format is like `#define Button_Name IR_Code` where Button_Name is something you choose and IR_Code is the code for the button you found out in step 3. Reped that for all buttons on your remote you want to use.
 
 6. Mapp actions to you buttons by editing the following part in the sketch.
 
-   `if(Data_back == VOL_UP) {
+   ```if(Data_back == VOL_UP) {
          TrinketHidCombo.pressMultimediaKey(MMKEY_VOL_UP); }
        else if(Data_back == VOL_DOWN) {
          TrinketHidCombo.pressMultimediaKey(MMKEY_VOL_DOWN); }
@@ -106,16 +106,16 @@ To get a list of things the Adafruit-TrinketHidCombo library can do have a look 
        else if(Data_back == PLAYPAUSE) {
          TrinketHidCombo.pressMultimediaKey(MMKEY_PLAYPAUSE); }
        else if(Data_back == MENU) {
-         TrinketHidCombo.write(char(32)); }`
+         TrinketHidCombo.write(char(32)); }```
 
 7. If everything is working - again comment out this line:
 
-   `// TrinketHidCombo.println(Data_back, HEX);`
+   ```// TrinketHidCombo.println(Data_back, HEX);```
 
 8. Flash the sketch onto the Digispark.
 
 If you need to change the intervall of mouse moovements, change this line in the sketch:
 
-`#define JIGGLE_INTERVALL 30000`
+```#define JIGGLE_INTERVALL 30000```
 
 The unit of the number is milliseconds.  
