@@ -93,21 +93,22 @@ To get a list of things the Adafruit-TrinketHidCombo library can do have a look 
 
 6. Mapp actions to you buttons by editing the following part in the sketch.
 
-   ```if(Data_back == VOL_UP) {
-         TrinketHidCombo.pressMultimediaKey(MMKEY_VOL_UP); }
-       else if(Data_back == VOL_DOWN) {
-         TrinketHidCombo.pressMultimediaKey(MMKEY_VOL_DOWN); }
-       else if(Data_back == NEXT) {
-         TrinketHidCombo.pressMultimediaKey(MMKEY_SCAN_NEXT_TRACK); }
-       else if(Data_back == PREV) {
-         TrinketHidCombo.pressMultimediaKey(MMKEY_SCAN_PREV_TRACK); }
-       else if(Data_back == MUTE) {
-         TrinketHidCombo.pressMultimediaKey(MMKEY_MUTE); }
-       else if(Data_back == PLAYPAUSE) {
-         TrinketHidCombo.pressMultimediaKey(MMKEY_PLAYPAUSE); }
-       else if(Data_back == MENU) {
-         TrinketHidCombo.write(char(32)); }```
-
+   ```
+   if(Data_back == VOL_UP) {
+     TrinketHidCombo.pressMultimediaKey(MMKEY_VOL_UP); }
+   else if(Data_back == VOL_DOWN) {
+     TrinketHidCombo.pressMultimediaKey(MMKEY_VOL_DOWN); }
+   else if(Data_back == NEXT) {
+     TrinketHidCombo.pressMultimediaKey(MMKEY_SCAN_NEXT_TRACK); }
+   else if(Data_back == PREV) {
+     TrinketHidCombo.pressMultimediaKey(MMKEY_SCAN_PREV_TRACK); }
+   else if(Data_back == MUTE) {
+     TrinketHidCombo.pressMultimediaKey(MMKEY_MUTE); }
+   else if(Data_back == PLAYPAUSE) {
+     TrinketHidCombo.pressMultimediaKey(MMKEY_PLAYPAUSE); }
+   else if(Data_back == MENU) {
+     TrinketHidCombo.write(char(32)); }
+   ```
 7. If everything is working - again comment out this line:
 
    ```// TrinketHidCombo.println(Data_back, HEX);```
