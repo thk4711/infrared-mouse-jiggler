@@ -24,6 +24,7 @@
 //  |-----------|----------------|
 
 // IR codes for your Remote control (this example is for an Apple remote)
+// change this section to match your remote
 #define VOL_UP    0xE0
 #define VOL_DOWN  0x10
 #define NEXT      0xD0
