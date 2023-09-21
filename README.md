@@ -38,7 +38,7 @@ For a more detailed description please have a look at https://www.instructables.
 
 ### Arduino IDE configuration
 
-Add the Digisparc board support under Preferences->Additional Boards Manager URLs: https://raw.githubusercontent.com/sparkfun/Arduino_Boards/main/IDE_Board_Manager/package_sparkfun_index.json
+Add the Digispark board support under Preferences->Additional Boards Manager URLs: https://raw.githubusercontent.com/sparkfun/Arduino_Boards/main/IDE_Board_Manager/package_sparkfun_index.json
 
 Before you upload your sketch, choose the right board under Tools->Board->Digistump AVR Boards->Digispark (Default 16.5 mhz).
 
