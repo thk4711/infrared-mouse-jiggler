@@ -34,7 +34,7 @@
 #define PLAYPAUSE 0x7A
 
 // intervall to move mouse in ms
-#define JIGGLE_INTERVALL 30000
+#define JIGGLE_INTERVAL 30000
 
 // download Adafruit-Trinket library from:
 // https://github.com/adafruit/Adafruit-Trinket-USB
@@ -99,7 +99,7 @@ void loop(void) {
   else {
     TrinketHidCombo.poll();
     unsigned long CurrentMillis = millis();
-    if (CurrentMillis - Last_jiggle >= JIGGLE_INTERVALL) {
+    if (CurrentMillis - Last_jiggle >= JIGGLE_INTERVAL) {
       TrinketHidCombo.mouseMove(2, 0, 0);
       delay(50);
       TrinketHidCombo.mouseMove(-2, 0, 0);

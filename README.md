@@ -2,12 +2,12 @@
 
 ### Use-Case
 
-1. If you want to prevent your computer from being locked automatically and you do not have the nessesary rights to deactivate that on OS level, you can plug in this mouse jiggler and it will show up in the OS as a USB input device. It will regularly move the mouse a little bit back and fore.
+1. If you want to prevent your computer from being locked automatically and you do not have the necessary rights to deactivate that on OS level, you can plug in this mouse jiggler and it will show up in the OS as a USB input device. It will regularly move the mouse a little bit back and forth.
 2. You listen to music or watch videos on your PC but you are not sitting next to it. With this device you can use any infrared remote to control things like volume and skip tracks.
 
 ### Hardware
 
-The Hardware used in this project is a Digispark. This a a little board with an [ATTINY85](https://www.microchip.com/en-us/product/attiny85) microcontroller with a special boot loader. You can buy that for instance on Amazon eBay or Aliexpress. There are many variants with different USB connectors. The one I am using has a USB connector as part of the circuit board.
+The Hardware used in this project is a Digispark. This is a little board with an [ATTINY85](https://www.microchip.com/en-us/product/attiny85) microcontroller with a special boot loader. You can buy that for instance on Amazon eBay or Aliexpress. There are many variants with different USB connectors. The one I am using has a USB connector as part of the circuit board.
 
 The only additional component needed is an infrared receiver. You can buy that as well on Amazon eBay or Aliexpress. Just search for "infrared TSOP 38khz".
 
@@ -46,7 +46,7 @@ More details can be found here: https://www.instructables.com/Digispark-Attiny-8
 
 ### Add Adafruit-Trinket library
 
-The sketch is using the the Adafruit TrinketHidCombo library. You can get it from [GitHub](https://github.com/adafruit/Adafruit-Trinket-USB/tree/master). On the page press "Code" button and choose download as zip.
+The sketch is using the Adafruit TrinketHidCombo library. You can get it from [GitHub](https://github.com/adafruit/Adafruit-Trinket-USB/tree/master). On the page press the "Code" button and choose download as zip.
 
 Now unpack the zip file and copy the TrinketHidCombo directory to your Arduino library directory.
 
@@ -76,7 +76,7 @@ TrinketHidCombo.println(Data_back, HEX);
 
 2. Flash the sketch onto the Digispark.
 
-3. Open an app which does accept text input like and editor or word processor.
+3. Open an app which does accept text input like an editor or word processor.
 
 4. Press the buttons on your remote. The HEX codes are written to your app if one button creates 2 codes, usually you want to use the first code.
 
@@ -102,7 +102,7 @@ TrinketHidCombo.println(Data_back, HEX);
 where Button_Name is something you choose and IR_Code is the code for the button you found out in step
 Repeat that for all buttons on your remote you want to use.
 
-6. Map actions to you buttons by editing the following part in the sketch.
+6. Map actions to your buttons by editing the following part in the sketch.
 
   ```c++
 if(Data_back == VOL_UP) {
@@ -132,5 +132,5 @@ else if(Data_back == MENU) {
 If you need to change the interval of mouse movements, change this line in the sketch:
 
   ```c++
-#define JIGGLE_INTERVALL 30000
+#define JIGGLE_INTERVAL 30000
   ```
