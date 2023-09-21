@@ -68,7 +68,7 @@ To get a list of things the Adafruit-TrinketHidCombo library can do have a look 
 
 ##### To find out the IR codes of your remote please do the following:
 
-1. Comment out the following line in the sketch:
+1. Uncomment the following line in the sketch:
 
   ```c++
 TrinketHidCombo.println(Data_back, HEX);
@@ -121,7 +121,7 @@ else if(Data_back == MENU) {
   TrinketHidCombo.write(char(32)); }
   ```
 
-7. If everything is working - again comment out this line:
+7. If everything is working - again comment this line:
 
   ```c++
 // TrinketHidCombo.println(Data_back, HEX);
