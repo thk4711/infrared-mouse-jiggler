@@ -72,13 +72,13 @@ To get a list of things the Adafruit-TrinketHidCombo library can do have a look 
   TrinketHidCombo.println(Data_back, HEX);
   ```
 
-3. Flash the sketch onto the Digispark.
+2. Flash the sketch onto the Digispark.
 
-4. Open an app which does accept text input like and editor or word processor.
+3. Open an app which does accept text input like and editor or word processor.
 
-5. Press the buttons on your remote. The HEX codes are written to your app if one button leeds to 2 codes usually you want to use the first code.
+4. Press the buttons on your remote. The HEX codes are written to your app if one button leeds to 2 codes usually you want to use the first code.
 
-6. Edit the following section in the sketch:
+5. Edit the following section in the sketch:
 
   ```
   // IR codes for your Remote control (this example is for an Apple remote)
@@ -117,7 +117,7 @@ To get a list of things the Adafruit-TrinketHidCombo library can do have a look 
   // TrinketHidCombo.println(Data_back, HEX);
   ```
 
-9. Flash the sketch onto the Digispark.
+8. Flash the sketch onto the Digispark.
 
 If you need to change the intervall of mouse moovements, change this line in the sketch:
   ```
