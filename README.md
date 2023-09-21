@@ -106,19 +106,19 @@ Repeat that for all buttons on your remote you want to use.
 
   ```c++
 if(Data_back == VOL_UP) {
- TrinketHidCombo.pressMultimediaKey(MMKEY_VOL_UP); }
+  TrinketHidCombo.pressMultimediaKey(MMKEY_VOL_UP); }
 else if(Data_back == VOL_DOWN) {
- TrinketHidCombo.pressMultimediaKey(MMKEY_VOL_DOWN); }
+  TrinketHidCombo.pressMultimediaKey(MMKEY_VOL_DOWN); }
 else if(Data_back == NEXT) {
- TrinketHidCombo.pressMultimediaKey(MMKEY_SCAN_NEXT_TRACK); }
+  TrinketHidCombo.pressMultimediaKey(MMKEY_SCAN_NEXT_TRACK); }
 else if(Data_back == PREV) {
- TrinketHidCombo.pressMultimediaKey(MMKEY_SCAN_PREV_TRACK); }
+  TrinketHidCombo.pressMultimediaKey(MMKEY_SCAN_PREV_TRACK); }
 else if(Data_back == MUTE) {
- TrinketHidCombo.pressMultimediaKey(MMKEY_MUTE); }
+  TrinketHidCombo.pressMultimediaKey(MMKEY_MUTE); }
 else if(Data_back == PLAYPAUSE) {
- TrinketHidCombo.pressMultimediaKey(MMKEY_PLAYPAUSE); }
+  TrinketHidCombo.pressMultimediaKey(MMKEY_PLAYPAUSE); }
 else if(Data_back == MENU) {
- TrinketHidCombo.write(char(32)); }
+  TrinketHidCombo.write(char(32)); }
   ```
 
 7. If everything is working - again comment out this line:
