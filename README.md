@@ -129,7 +129,7 @@ else if(Data_back == MENU) {
 
 8. Flash the sketch onto the Digispark.
 
-If you need to change the intervall of mouse moovements, change this line in the sketch:
+If you need to change the interval of mouse movements, change this line in the sketch:
 
   ```c++
 #define JIGGLE_INTERVALL 30000
