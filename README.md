@@ -68,9 +68,9 @@ To get a list of things the Adafruit-TrinketHidCombo library can do have a look 
 ##### To find out the IR codes of your remote please do the following:
 
 1. Comment out the following line in the sketch:
-```
-TrinketHidCombo.println(Data_back, HEX);
-```
+  ```
+  TrinketHidCombo.println(Data_back, HEX);
+  ```
 
 3. Flash the sketch onto the Digispark.
 
@@ -80,17 +80,17 @@ TrinketHidCombo.println(Data_back, HEX);
 
 6. Edit the following section in the sketch:
 
-```
-// IR codes for your Remote control (this example is for an Apple remote)
-// change this section to match your remote
-#define VOL_UP    0xE0
-#define VOL_DOWN  0x10
-#define NEXT      0xD0
-#define PREV      0xB0
-#define MUTE      0xBA
-#define MENU      0x40
-#define PLAYPAUSE 0x7A
-```
+  ```
+  // IR codes for your Remote control (this example is for an Apple remote)
+  // change this section to match your remote
+  #define VOL_UP    0xE0
+  #define VOL_DOWN  0x10
+  #define NEXT      0xD0
+  #define PREV      0xB0
+  #define MUTE      0xBA
+  #define MENU      0x40
+  #define PLAYPAUSE 0x7A
+  ```
 
    The format is like `#define Button_Name IR_Code` where Button_Name is something you choose and IR_Code is the code for the button you found out in step 3. Reped that for all buttons on your remote you want to use.
 
@@ -113,15 +113,15 @@ TrinketHidCombo.println(Data_back, HEX);
      TrinketHidCombo.write(char(32)); }
    ```
 7. If everything is working - again comment out this line:
-```
-// TrinketHidCombo.println(Data_back, HEX);
-```
+  ```
+  // TrinketHidCombo.println(Data_back, HEX);
+  ```
 
 9. Flash the sketch onto the Digispark.
 
 If you need to change the intervall of mouse moovements, change this line in the sketch:
-```
-#define JIGGLE_INTERVALL 30000
-```
+  ```
+  #define JIGGLE_INTERVALL 30000
+  ```
 
 The unit of the number is milliseconds.  
