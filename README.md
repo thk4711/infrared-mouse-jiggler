@@ -91,8 +91,7 @@ To get a list of things the Adafruit-TrinketHidCombo library can do have a look 
   #define MENU      0x40
   #define PLAYPAUSE 0x7A
   ```
-
-   The format is like `#define Button_Name IR_Code` where Button_Name is something you choose and IR_Code is the code for the button you found out in step 3. Reped that for all buttons on your remote you want to use.
+  The format is like `#define Button_Name IR_Code` where Button_Name is something you choose and IR_Code is the code for the button you found out in step 3. Reped that for all buttons on your remote you want to use.
 
 6. Mapp actions to you buttons by editing the following part in the sketch.
 
