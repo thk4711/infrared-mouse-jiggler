@@ -13,14 +13,14 @@
 //   |-----|
 //   |  |  |
 //   |  |  |
-//   0  1  2
+//   1  2  3
 //
 //  |-----------|----------------|
 //  | TSOP pins | Digispark pins |
 //  |-----------|----------------|
-//  | 0 : Data  |    PB2         |
-//  | 1 : GND   |    GND         |
-//  | 2 : VCC   |    5V          |
+//  | 1 : Data  |    PB2         |
+//  | 2 : GND   |    GND         |
+//  | 3 : VCC   |    5V          |
 //  |-----------|----------------|
 
 // IR codes for your Remote control (this example is for an Apple remote)
@@ -33,7 +33,7 @@
 #define MENU      0x40
 #define PLAYPAUSE 0x7A
 
-// intervall to move mouse
+// intervall to move mouse in ms
 #define JIGGLE_INTERVALL 30000
 
 // download Adafruit-Trinket library from:
