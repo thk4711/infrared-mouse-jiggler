@@ -121,6 +121,18 @@ else if(Data_back == MENU) {
   TrinketHidCombo.write(char(32)); }
   ```
 
+7. Map actions to your buttons that you want to have repetitions.
+ ```c++
+else if (sended == 2) { // Repetition
+  // Control keys that you want to have repetitions
+  if(Data_back == VOL_UP) {
+    TrinketHidCombo.pressMultimediaKey(MMKEY_VOL_UP); }
+  else if(Data_back == VOL_DOWN) {
+    TrinketHidCombo.pressMultimediaKey(MMKEY_VOL_DOWN); }
+  sended = 0;
+  }
+ ```
+
 7. If everything is working - again comment this line:
 
   ```c++
