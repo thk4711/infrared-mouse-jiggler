@@ -146,3 +146,9 @@ If you need to change the interval of mouse movements, change this line in the s
   ```c++
 #define JIGGLE_INTERVAL 30000
   ```
+
+### 3d printable case
+
+The repo contains a 3d printable case for a Digispark and an infrared receiver. 
+
+![jiggler case](https://github.com/thk4711/infrared-mouse-jiggler/blob/main/3d-print-case/jiggler.png)
