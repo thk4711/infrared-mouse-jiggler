@@ -1,12 +1,13 @@
 // This code will do 2 things:
-// 1. read an infrared remote control and performe USB keyboard
+// 1. read an infrared remote control and perform USB keyboard
 //    or mouse actions
-// 2. move the mouse regulary just a little to prevent your computer
-//    from beeing locked
+// 2. move the mouse regularly just a little to prevent your computer
+//    from being locked
 //
 // Add this board definition to Aruino IDE:
 // http://digistump.com/package_digistump_index.json
-// Infrared receiver soldered to Digispark
+//
+// Infrared receiver connection to Digispark
 //
 //   |-----|
 //   | ( ) |
@@ -23,7 +24,7 @@
 //  | 3 : VCC   |    5V          |
 //  |-----------|----------------|
 
-// IR codes for your Remote control (this example is for an Apple remote)
+// IR codes for your remote control (this example is for an Apple remote)
 // change this section to match your remote
 #define VOL_UP    0xE0
 #define VOL_DOWN  0x10
@@ -33,7 +34,7 @@
 #define MENU      0x40
 #define PLAYPAUSE 0x7A
 
-// intervall to move mouse in ms
+// interval to move mouse in ms
 #define JIGGLE_INTERVAL 30000
 
 // download Adafruit-Trinket library from:
