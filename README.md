@@ -1,7 +1,5 @@
 # infrared-mouse-jiggler
 
-[toc]
-
 ### Use-Case
 
 1. If you want to prevent your computer from being locked automatically and you do not have the necessary rights to deactivate that on OS level, you can plug in this mouse jiggler and it will show up in the OS as a USB input device. It will regularly move the mouse a little bit back and forth.
@@ -68,7 +66,7 @@ To get a list of things the Adafruit-TrinketHidCombo library can do have a look 
 - print
 - println
 
-### Find out the IR codes of your remote
+##### To find out the IR codes of your remote please do the following:
 
 1. Uncomment the following line in the sketch:
 
